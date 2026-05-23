@@ -1,6 +1,8 @@
-# Sketch 06 — Planetarium Star Map
+# HTML5 Canvas Planetarium Star Map
 
 An animated star map rendered on a 2160 × 1080 canvas using **canvas-sketch**. Stars and constellation lines rotate with the day of year, simulating the night sky's annual cycle. A **Tweakpane** panel exposes all controls at runtime; the same options can be pre-set in the `CONFIG` object at the top of `canvas-skymap.js` before launching.
+
+Check the [demos here](https://amirabet.github.io/html5Canvas_skymap/)!
 
 ## Running
 
@@ -128,7 +130,7 @@ The sketch can be compiled into a single self-contained HTML file using `build.j
 
 | Command             | Description                                  |
 | ------------------- | -------------------------------------------- |
-| `npm run build`     | Default build → `docs/canvas-skymap.html`        |
+| `npm run build`     | Default build → `docs/canvas-skymap.html`    |
 | `npm run build:all` | Build one HTML file per config in `configs/` |
 
 ### Single build
@@ -141,7 +143,7 @@ node build.js [--title "Title"] [--config <file-or-json>] [--out <filename.html>
 | ---------- | --------------------------------------------------------------------- |
 | `--title`  | Sets the `<title>` tag. Defaults to the `--out` filename stem.        |
 | `--config` | CONFIG overrides — a path to a `.json` file or an inline JSON string. |
-| `--out`    | Output filename inside `docs/`. Defaults to `canvas-skymap.html`.         |
+| `--out`    | Output filename inside `docs/`. Defaults to `canvas-skymap.html`.     |
 
 **Examples:**
 
@@ -200,3 +202,11 @@ To add a new build variant, create a new `.json` file in `configs/` and run `npm
 4. The page title is replaced with the value from `--title`
 
 In dev mode (`npm start`) `window.__SKETCH_CONFIG__` is never set, so all CONFIG defaults apply unchanged.
+
+### Pending tasks
+
+- Improve repo confgi
+  - block branches
+  - autopublish releases
+- Add speed toggle for autoplay
+- Make a plugin with CDN
