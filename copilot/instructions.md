@@ -18,7 +18,7 @@ The sketch can be used in two ways:
 ## 2. Folder layout
 
 ```
-sketches/06/
+root/
 ├── canvas-skymap.js      ← The single source file for the entire sketch
 ├── constellations.json   ← Star/constellation data (the only data file; do NOT rename)
 ├── build.js              ← Build script (wraps canvas-sketch-cli, adds CONFIG injection)
