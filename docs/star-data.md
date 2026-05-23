@@ -1,0 +1,325 @@
+# Star Data Reference
+
+Data sourced from `../constellations.json`.
+
+---
+
+## Constellations (43)
+
+- Andromeda
+- Aquarius
+- Aquila
+- Aries
+- Auriga
+- Bootes
+- Camelopardalis
+- Cancer
+- Canes Venatici
+- Canis Minor
+- Capricornus
+- Cassiopeia
+- Cepheus
+- Coma Berenices
+- Corona Borealis
+- Cygnus
+- Delphinus
+- Draco
+- Equuleus
+- Gemini
+- Hercules
+- Hydra
+- Lacerta
+- Leo
+- Libra
+- Lynx
+- Lyra
+- Monoceros
+- Ophiuchus
+- Orion
+- Pegasus
+- Perseus
+- Pisces
+- Sagitta
+- Sagittarius
+- Scorpius
+- Sextans
+- Taurus
+- Triangulum
+- Ursa Major
+- Ursa Minor
+- Virgo
+- Vulpecula
+
+---
+
+## Stars (269)
+
+- 1 Lac
+- 13 Vul
+- 15 Lyn
+- 2 Lac
+- 2 Lyn
+- 23 Vul
+- 31 Lyn
+- 38 Lyn
+- 4 Lac
+- 41 Ari
+- 5 Lac
+- 6 Lac
+- Acrab
+- Acubens
+- Adhafera
+- Ain
+- Albali
+- Albireo
+- Alcyone
+- Aldebaran
+- Alderamin
+- Aldhibah
+- Alfirk
+- Algedi
+- Algenib
+- Algenubi
+- Algieba
+- Algol
+- Alhena
+- Alioth
+- Alkaid
+- Almaaz
+- Almach
+- Alnasl
+- Alnilam
+- Alnitak
+- Alniyat
+- Alpha Cam
+- Alpha Lac
+- Alpha Lyn
+- Alpha Mon
+- Alpha Sex
+- Alpha Sge
+- Alphard
+- Alphecca
+- Alpheratz
+- Alrakis
+- Alrescha
+- Alshain
+- Altair
+- Altais
+- Altarf
+- Alula Australis
+- Alula Borealis
+- Alzirr
+- Anser
+- Antares
+- Arcturus
+- Ascella
+- Asellus Australis
+- Asellus Borealis
+- Atik
+- Atlas
+- Auva
+- Bellatrix
+- Beta Cam
+- Beta Com
+- Beta Lac
+- Beta Mon
+- Beta Sex
+- Beta Tri
+- Betelgeuse
+- Biham
+- Botein
+- Brachium
+- CS Cam
+- Capella
+- Caph
+- Castor
+- Cebalrai
+- Chara
+- Chertan
+- Cor Caroli
+- Dabih
+- Delta And
+- Delta Aql
+- Delta Cyg
+- Delta Equ
+- Delta Mon
+- Delta Per
+- Delta Psc
+- Delta Sex
+- Delta Sge
+- Delta² Lyr
+- Deneb
+- Deneb Algedi
+- Denebola
+- Diadem
+- Dschubba
+- Dubhe
+- Dziban
+- Edasich
+- Electra
+- Elnath
+- Eltanin
+- Enif
+- Epsilon CrB
+- Epsilon Hya
+- Epsilon Psc
+- Epsilon Sex
+- Epsilon UMi
+- Errai
+- Eta Her
+- Eta Leo
+- Eta Piscium
+- Eta UMi
+- Fumalsamakah
+- Gamma Cas
+- Gamma Com
+- Gamma CrB
+- Gamma Del
+- Gamma Equ
+- Gamma Hya
+- Gamma Lib
+- Gamma Mon
+- Gamma Psc
+- Gamma Sex
+- Gamma Sge
+- Gamma Tri
+- Giausar
+- Gienah
+- Girtab
+- Gomeisa
+- Grumium
+- Hamal
+- Hassaleh
+- Hatsya
+- Heze
+- Homam
+- Hyadum I
+- Hyadum II
+- Iota Cep
+- Iota Cnc
+- Iota Hya
+- Iota Psc
+- Izar
+- Kappa Psc
+- Kappa UMa
+- Kaus Australis
+- Kaus Borealis
+- Kaus Media
+- Kitalpha
+- Kochab
+- Kornephoros
+- Kuma
+- Lambda Equ
+- Lambda Psc
+- Larawag
+- Lesath
+- Mahasim
+- Marfik
+- Markab
+- Matar
+- Mebsuta
+- Megrez
+- Meissa
+- Menkalinan
+- Merak
+- Mesarthim
+- Mintaka
+- Mirach
+- Miram
+- Mirfak
+- Misam
+- Mizar
+- Mothallah
+- Mu And
+- Mu Her
+- Mu Hya
+- Muphrid
+- Muscida
+- Nashira
+- Nekkar
+- Nu Draconis
+- Nu Hya
+- Nu Oph
+- Nunki
+- Nusakan
+- Omega Psc
+- Omicron Psc
+- Phecda
+- Pherkad
+- Phi Sgr
+- Pi Her
+- Pi1 Ori
+- Pi2 Ori
+- Pi4 Ori
+- Pi5 Ori
+- Pi6 Ori
+- Polaris
+- Pollux
+- Porrima
+- Procyon
+- Propus
+- Psi UMa
+- Rasalas
+- Rasalgethi
+- Rasalhague
+- Rastaban
+- Regulus
+- Rigel
+- Rotanev
+- Ruchbah
+- Sabik
+- Sadachbia
+- Sadalmelik
+- Sadalsuud
+- Sadr
+- Saiph
+- Sargas
+- Sarin
+- Scheat
+- Schedar
+- Segin
+- Seginus
+- Shaula
+- Sheliak
+- Sheratan
+- Skat
+- Spica
+- Sualocin
+- Sulafat
+- Tabit
+- Talitha
+- Tania Australis
+- Tania Borealis
+- Tarazed
+- Tau Sco
+- Tejat
+- Theta Aql
+- Theta CrB
+- Theta Hya
+- Theta Lib
+- Theta Oph
+- Theta Psc
+- Thuban
+- Tianguan
+- Tyl
+- Upsilon Lib
+- Vega
+- Vindemiatrix
+- Wasat
+- Xi Hya
+- Yed Posterior
+- Yed Prior
+- Yildun
+- Zavijava
+- Zeta Aql
+- Zeta Aqr
+- Zeta Cap
+- Zeta Cep
+- Zeta Equ
+- Zeta Her
+- Zeta Hya
+- Zeta Lyr
+- Zeta UMi
+- Zosma
+- Zubenelgenubi
+- Zubeneschamali

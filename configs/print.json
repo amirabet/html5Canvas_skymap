@@ -1,0 +1,9 @@
+{
+  "theme": "light",
+  "viewScale": "1:1",
+  "showGrid": false,
+  "showConstellationName": true,
+  "showConstellationLines": true,
+  "showStarNames": "none",
+  "showPane": false
+}
