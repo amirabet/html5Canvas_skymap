@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML5 Canvas Sky Map — Examples</title>
+    <style>
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+        background: #060d1a;
+        color: #e8d8b4;
+        font-family: Georgia, "Times New Roman", serif;
+        overflow-x: hidden;
+      }
+
+      #stars {
+        position: fixed;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        pointer-events: none;
+      }
+
+      main {
+        position: relative;
+        z-index: 1;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 60px 24px;
+        gap: 48px;
+      }
+
+      header {
+        text-align: center;
+      }
+
+      header h1 {
+        font-size: clamp(1.6rem, 4vw, 2.8rem);
+        font-weight: normal;
+        letter-spacing: 0.18em;
+        text-transform: uppercase;
+        color: #f8f4e4;
+        text-shadow: 0 0 32px rgba(212, 168, 67, 0.5);
+      }
+
+      header p {
+        margin-top: 12px;
+        font-size: 0.95rem;
+        letter-spacing: 0.1em;
+        color: rgba(212, 168, 67, 0.75);
+      }
+
+      .divider {
+        width: 120px;
+        height: 1px;
+        background: linear-gradient(
+          to right,
+          transparent,
+          rgba(212, 168, 67, 0.6),
+          transparent
+        );
+        margin: 16px auto 0;
+      }
+
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 20px;
+        width: 100%;
+        max-width: 900px;
+      }
+
+      .card {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 28px 24px;
+        background: rgba(10, 20, 45, 0.72);
+        border: 1px solid rgba(212, 168, 67, 0.2);
+        border-radius: 6px;
+        text-decoration: none;
+        color: inherit;
+        transition:
+          border-color 0.25s,
+          background 0.25s,
+          transform 0.2s;
+        backdrop-filter: blur(4px);
+      }
+
+      .card:hover {
+        border-color: rgba(212, 168, 67, 0.7);
+        background: rgba(15, 28, 60, 0.88);
+        transform: translateY(-3px);
+      }
+
+      .card-icon {
+        font-size: 1.4rem;
+        line-height: 1;
+        opacity: 0.85;
+      }
+
+      .card-title {
+        font-size: 1.05rem;
+        letter-spacing: 0.08em;
+        color: #f8f4e4;
+      }
+
+      .card-desc {
+        font-size: 0.82rem;
+        line-height: 1.55;
+        color: rgba(232, 216, 180, 0.65);
+        font-family: system-ui, sans-serif;
+      }
+
+      .card-link {
+        margin-top: auto;
+        padding-top: 12px;
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: rgba(212, 168, 67, 0.7);
+        font-family: system-ui, sans-serif;
+      }
+
+      .card:hover .card-link {
+        color: rgba(212, 168, 67, 1);
+      }
+
+      footer {
+        position: relative;
+        z-index: 1;
+        padding: 24px;
+        text-align: center;
+        font-size: 0.75rem;
+        color: rgba(232, 216, 180, 0.3);
+        font-family: system-ui, sans-serif;
+        letter-spacing: 0.08em;
+      }
+    </style>
+  </head>
+  <body>
+    <canvas id="stars"></canvas>
+
+    <main>
+      <header>
+        <h1>HTML5 Canvas Sky Map</h1>
+        <p><b>North Hemisphere version</b><br />Examples Page</p>
+        <div class="divider"></div>
+      </header>
+
+      <div class="grid">
+        <a class="card" href="default.html">
+          <div class="card-icon">⊙</div>
+          <div class="card-title">Default</div>
+          <div class="card-desc">
+            Default "Blue" theme, and visible hints. With Control Panel visible.
+          </div>
+          <div class="card-link">Open &rarr;</div>
+        </a>
+
+        <a class="card" href="orion.html">
+          <div class="card-icon">✦</div>
+          <div class="card-title">Orion</div>
+          <div class="card-desc">
+            Sky centred on the Orion constellation. Elegant gold theme, panel
+            hidden.
+          </div>
+          <div class="card-link">Open &rarr;</div>
+        </a>
+
+        <a class="card" href="sirius.html">
+          <div class="card-icon">★</div>
+          <div class="card-title">Procyon</div>
+          <div class="card-desc">
+            Sky centred on Procyon, brightest star in Canis Minor. Star names
+            shown for the constellation.
+          </div>
+          <div class="card-link">Open &rarr;</div>
+        </a>
+
+        <a class="card" href="nightmode-autoplay.html">
+          <div class="card-icon">◑</div>
+          <div class="card-title">Nightmode Autoplay</div>
+          <div class="card-desc">
+            Deep red palette safe for dark rooms. Sky animates forward day by
+            day.
+          </div>
+          <div class="card-link">Open &rarr;</div>
+        </a>
+
+        <a class="card" href="print.html">
+          <div class="card-icon">□</div>
+          <div class="card-title">Print</div>
+          <div class="card-desc">
+            Light background, full square map, no grid. Clean layout for
+            printing or export.
+          </div>
+          <div class="card-link">Open &rarr;</div>
+        </a>
+
+        <a class="card" href="stars-only.html">
+          <div class="card-icon">·</div>
+          <div class="card-title">Stars Only</div>
+          <div class="card-desc">
+            Monochrome star field with no constellation lines, labels or UI
+            panel. Hover on a star to view it's name.
+          </div>
+          <div class="card-link">Open &rarr;</div>
+        </a>
+      </div>
+    </main>
+
+    <footer>
+      canvas-sketch &nbsp;·&nbsp; Tweakpane &nbsp;·&nbsp; Planetarium Star Map
+    </footer>
+
+    <script>
+      const canvas = document.getElementById("stars");
+      const ctx = canvas.getContext("2d");
+
+      let W, H, stars;
+
+      function rand(min, max) {
+        return min + Math.random() * (max - min);
+      }
+
+      function init() {
+        W = canvas.width = window.innerWidth;
+        H = canvas.height = window.innerHeight;
+        const count = Math.round((W * H) / 4000);
+        stars = Array.from({ length: count }, () => ({
+          x: rand(0, W),
+          y: rand(0, H),
+          r: rand(0.3, 1.6),
+          phase: rand(0, Math.PI * 2),
+          speed: rand(0.4, 1.4),
+          bright: rand(0.4, 1.0),
+        }));
+      }
+
+      function draw(t) {
+        ctx.clearRect(0, 0, W, H);
+        for (const s of stars) {
+          const alpha =
+            s.bright *
+            (0.45 + (0.55 * (Math.sin(t * s.speed + s.phase) + 1)) / 2);
+          ctx.beginPath();
+          ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2);
+          ctx.fillStyle = `rgba(240, 230, 200, ${alpha})`;
+          ctx.fill();
+        }
+        requestAnimationFrame(draw);
+      }
+
+      window.addEventListener("resize", init);
+      init();
+      requestAnimationFrame(draw);
+    </script>
+  </body>
+</html>

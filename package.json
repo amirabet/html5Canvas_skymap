@@ -1,0 +1,20 @@
+{
+  "name": "06",
+  "version": "1.0.0",
+  "main": "canvas-skymap.js",
+  "scripts": {
+    "start": "canvas-sketch canvas-skymap.js --open",
+    "build": "node build.js",
+    "build:all": "node build.js --all",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "canvas-sketch": "^0.7.7",
+    "tweakpane": "^3.1.10",
+    "tweakpane-plugin-search-list": "^0.0.10"
+  }
+}
